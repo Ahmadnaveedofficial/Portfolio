@@ -57,7 +57,7 @@ const ScheduleModal = ({ isOpen, onClose, isDarkMode }) => {
         EMAILJS_PUBLIC_KEY
       );
 
-      // 2. Tumhe notification email
+      // 2. meri notification email
       await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_NOTIFY,
@@ -120,7 +120,7 @@ const ScheduleModal = ({ isOpen, onClose, isDarkMode }) => {
             </button>
 
             {isBooked ? (
-              /* ── Success State ── */
+              /*  Success State */
               <div className="text-center">
                 <motion.div
                   initial={{ scale: 0 }}
@@ -155,7 +155,7 @@ const ScheduleModal = ({ isOpen, onClose, isDarkMode }) => {
                   transition={{ delay: 0.45 }}
                   className={`text-sm mb-6 ${isDarkMode ? "text-gray-500" : "text-gray-400"}`}
                 >
-                  Confirmation email bhej di gayi hai! ✉️
+               Confirmation email has been sent! ✉️
                 </motion.p>
 
                 <motion.div
