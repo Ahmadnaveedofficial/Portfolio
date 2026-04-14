@@ -20,14 +20,24 @@ const Footer = () => {
   const scrollY = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
   const socialLinks = [
-    { name: "GitHub", icons: FiGithub, url: "", color: "hover:text-gray-400" },
+    {
+      name: "GitHub",
+      icons: FiGithub,
+      url: "https://github.com/Ahmadnaveedofficial",
+      color: "hover:text-gray-400",
+    },
     {
       name: "LinkedIn",
       icons: FiLinkedin,
-      url: "",
+      url: "https://www.linkedin.com/in/ahmad-naveed-7b539521a/",
       color: "hover:text-blue-400",
     },
-    { name: "Twitter", icons: FiTwitter, url: "", color: "hover:text-sky-400" },
+    {
+      name: "Twitter",
+      icons: FiTwitter,
+      url: "https://www.linkedin.com/in/ahmad-naveed-7b539521a/",
+      color: "hover:text-sky-400",
+    },
     {
       name: "Email",
       icons: Mail,
