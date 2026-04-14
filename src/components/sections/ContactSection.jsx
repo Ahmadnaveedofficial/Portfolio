@@ -288,7 +288,7 @@ const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
             <motion.button
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.98 }}
-              className={`px-6 py-3 rounded-full border font-medium transition-all duration-300 ${isDarkMode ? "border-gray-600 hover:border-blue-500 hover:text-blue-400" : "border-gray-300 hover:border-blue-500 hover:text-blue-600"}`}
+              className={`cursor-pointer px-6 py-3 rounded-full border font-medium transition-all duration-300 ${isDarkMode ? "border-gray-600 hover:border-blue-500 hover:text-blue-400" : "border-gray-300 hover:border-blue-500 hover:text-blue-600"}`}
               onClick={() => setShowSchedule(true)}
             >
               Schedule a Call
