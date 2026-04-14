@@ -3,6 +3,7 @@ import { ArrowDown, Mail } from "lucide-react";
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 import { useTheme } from "../../context/ThemeContext.jsx";
 import profile from "../../assets/profile.jpg";
+import cvFile from "../../assets/AhmadCv.pdf";
 import { containerVariants, itemsVariants } from "../../utils/helper.js";
 
 const HeroSection = () => {
@@ -78,7 +79,7 @@ const HeroSection = () => {
         </div>
 
         <div className="max-w-7xl mx-auto w-full z-10 mt-20">
-          {/* ── Mobile layout ── */}
+          {/* Mobile layout */}
           <div className="block md:hidden">
             <motion.div
               initial="hidden"
@@ -185,6 +186,19 @@ const HeroSection = () => {
                 >
                   Get in Touch
                 </motion.button>
+               <motion.a
+  href={cvFile}
+  download="Ahmad_Naveed_CV.pdf"
+  whileHover={{ y: -2 }}
+  whileTap={{ scale: 0.98 }}
+  className={`cursor-pointer border px-8 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2 ${
+    isDarkMode
+      ? "border-gray-700 hover:border-gray-600 text-gray-300"
+      : "border-gray-300 hover:border-gray-400 text-gray-700"
+  }`}
+>
+   Download CV
+</motion.a>
               </motion.div>
 
               {/* Social links mobile */}
@@ -299,6 +313,19 @@ const HeroSection = () => {
                 >
                   Get in Touch
                 </motion.button>
+                <motion.a
+  href={cvFile}
+  download="Ahmad_Naveed_CV.pdf"
+  whileHover={{ y: -2 }}
+  whileTap={{ scale: 0.98 }}
+  className={`cursor-pointer border px-8 py-4 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2 ${
+    isDarkMode
+      ? "border-gray-700 hover:border-gray-600 text-gray-300"
+      : "border-gray-300 hover:border-gray-400 text-gray-700"
+  }`}
+>
+  Download CV
+</motion.a>
               </motion.div>
 
               {/* Social links desktop */}
