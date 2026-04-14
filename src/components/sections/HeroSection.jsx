@@ -3,7 +3,7 @@ import { ArrowDown, Mail } from "lucide-react";
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 import { useTheme } from "../../context/ThemeContext.jsx";
 import profile from "../../assets/profile.jpg";
-import cvFile from "../../assets/AhmadCv.pdf";
+import cvFile from "../../assets/AhmadCV.pdf";
 import { containerVariants, itemsVariants } from "../../utils/helper.js";
 
 const HeroSection = () => {
