@@ -186,19 +186,19 @@ const HeroSection = () => {
                 >
                   Get in Touch
                 </motion.button>
-               <motion.a
-  href={cvFile}
-  download="Ahmad_Naveed_CV.pdf"
-  whileHover={{ y: -2 }}
-  whileTap={{ scale: 0.98 }}
-  className={`cursor-pointer border px-8 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2 ${
-    isDarkMode
-      ? "border-gray-700 hover:border-gray-600 text-gray-300"
-      : "border-gray-300 hover:border-gray-400 text-gray-700"
-  }`}
->
-   Download CV
-</motion.a>
+                <motion.a
+                  href={cvFile}
+                  download="Ahmad_Naveed_CV.pdf"
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  className={`cursor-pointer border px-8 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2 ${
+                    isDarkMode
+                      ? "border-gray-700 hover:border-gray-600 text-gray-300"
+                      : "border-gray-300 hover:border-gray-400 text-gray-700"
+                  }`}
+                >
+                  Download CV
+                </motion.a>
               </motion.div>
 
               {/* Social links mobile */}
@@ -314,18 +314,18 @@ const HeroSection = () => {
                   Get in Touch
                 </motion.button>
                 <motion.a
-  href={cvFile}
-  download="Ahmad_Naveed_CV.pdf"
-  whileHover={{ y: -2 }}
-  whileTap={{ scale: 0.98 }}
-  className={`cursor-pointer border px-8 py-4 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2 ${
-    isDarkMode
-      ? "border-gray-700 hover:border-gray-600 text-gray-300"
-      : "border-gray-300 hover:border-gray-400 text-gray-700"
-  }`}
->
-  Download CV
-</motion.a>
+                  href={cvFile}
+                  download="Ahmad_Naveed_CV.pdf"
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  className={`cursor-pointer border px-8 py-4 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2 ${
+                    isDarkMode
+                      ? "border-gray-700 hover:border-gray-600 text-gray-300"
+                      : "border-gray-300 hover:border-gray-400 text-gray-700"
+                  }`}
+                >
+                  Download CV
+                </motion.a>
               </motion.div>
 
               {/* Social links desktop */}

@@ -29,44 +29,49 @@ const ProjectsSection = () => {
       </div>
       <div className="max-w-7xl mx-auto relative z-10">
         {/* section header */}
-             <motion.div
-             initial="hidden"
-             animate={isInView? "visible" :"hidden"}
-             variants={containerVariants}
-             className="text-center mb-20"
- >
-           <motion.div 
-           variants={itemsVariants}
-           className={`text-sm uppercase tracking-widest ${isDarkMode? "text-gray-500" : "text-gray-600"} mb-4`}
-           >
-            Featured Work 
-           </motion.div>
-           <motion.h2
-           variants={itemsVariants}
-           className="text-3xl md:text-5xl font-light mb-6"
-           >
+        <motion.div
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          variants={containerVariants}
+          className="text-center mb-20"
+        >
+          <motion.div
+            variants={itemsVariants}
+            className={`text-sm uppercase tracking-widest ${isDarkMode ? "text-gray-500" : "text-gray-600"} mb-4`}
+          >
+            Featured Work
+          </motion.div>
+          <motion.h2
+            variants={itemsVariants}
+            className="text-3xl md:text-5xl font-light mb-6"
+          >
             Recent <span className="text-blue-500 font-medium">Projects</span>
-           </motion.h2>
-           <motion.p
-           variants={itemsVariants}
-           className={`text-lg ${isDarkMode?"text-gray-400":"text-gray-600"} max-w-2xl mx-auto font-light`}
-           >
-            A collection of projects that showcase my expertise in building modern web application and solving complex problems.
-           </motion.p>
-           </motion.div>
+          </motion.h2>
+          <motion.p
+            variants={itemsVariants}
+            className={`text-lg ${isDarkMode ? "text-gray-400" : "text-gray-600"} max-w-2xl mx-auto font-light`}
+          >
+            A collection of projects that showcase my expertise in building
+            modern web application and solving complex problems.
+          </motion.p>
+        </motion.div>
 
-           {/* project Grid */}
-           <motion.div 
-           initial="hidden"
-           animate={isInView?"visible":"hidden" }
-           variants={containerVariants}
-           className="grid md:grid-cols-3 lg-grid-cols-4 gap-8"
-           >
-            {PROJECTS.map((project,index)=>(
-                <ProjectCard key={project.id} project={project} index={index} isDarkMode={isDarkMode}/>
-            ))}
-            </motion.div>
-           
+        {/* project Grid */}
+        <motion.div
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          variants={containerVariants}
+          className="grid md:grid-cols-3 lg-grid-cols-4 gap-8"
+        >
+          {PROJECTS.map((project, index) => (
+            <ProjectCard
+              key={project.id}
+              project={project}
+              index={index}
+              isDarkMode={isDarkMode}
+            />
+          ))}
+        </motion.div>
       </div>
     </section>
   );

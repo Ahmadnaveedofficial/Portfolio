@@ -125,7 +125,7 @@ const AboutSection = () => {
                     whileHover={{ x: 4 }}
                     className={`flex items-center space-x-4 p-4 rounded-full ${
                       isDarkMode
-                        ? "bg-gray-800/30 hover:bg-gray-800/50" 
+                        ? "bg-gray-800/30 hover:bg-gray-800/50"
                         : "bg-gray-50/50 hover:bg-gray-100/50"
                     } transition-all duration-300
                       `}

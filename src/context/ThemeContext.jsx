@@ -7,27 +7,26 @@ export const ThemeProvider = ({ children }) => {
     localStorage.getItem("theme") || "light",
   );
 
-  useEffect(()=>{
-    const root=window.document.documentElement;
-    if(isDarkMode==="dark"){
-        root.classList.add("dark");
+  useEffect(() => {
+    const root = window.document.documentElement;
+    if (isDarkMode === "dark") {
+      root.classList.add("dark");
+    } else {
+      root.classList.remove("dark");
     }
-    else{
-        root.classList.remove("dark");
-    }
-    localStorage.setItem("theme",isDarkMode);
-  },[isDarkMode])
-   const toggleTheme = () =>
+    localStorage.setItem("theme", isDarkMode);
+  }, [isDarkMode]);
+  const toggleTheme = () =>
     setIsDarkMode((prev) => (prev === "dark" ? "light" : "dark"));
-  return(
-  <ThemeContext.Provider
-    value={{ isDarkMode: isDarkMode === "dark", toggleTheme  }}
-  >
-    {children}
-  </ThemeContext.Provider>
+  return (
+    <ThemeContext.Provider
+      value={{ isDarkMode: isDarkMode === "dark", toggleTheme }}
+    >
+      {children}
+    </ThemeContext.Provider>
   );
 };
 
-export const useTheme=()=>{
-  return  useContext(ThemeContext);
-}
+export const useTheme = () => {
+  return useContext(ThemeContext);
+};

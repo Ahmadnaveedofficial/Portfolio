@@ -1,4 +1,10 @@
-const TextInput = ({ isDarkMode, value, handleInputChange, textarea, lable }) => {
+const TextInput = ({
+  isDarkMode,
+  value,
+  handleInputChange,
+  textarea,
+  lable,
+}) => {
   const InputComponent = textarea ? "textarea" : "input";
 
   return (
@@ -25,4 +31,4 @@ const TextInput = ({ isDarkMode, value, handleInputChange, textarea, lable }) =>
   );
 };
 
-export default TextInput
+export default TextInput;

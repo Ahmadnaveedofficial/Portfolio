@@ -14,7 +14,7 @@ const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const EMAILJS_TEMPLATE_CONTACT = import.meta.env.VITE_EMAILJS_TEMPLATE_CONTACT;
 const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
- const ContactSection = () => {
+const ContactSection = () => {
   const { isDarkMode } = useTheme();
   const [formData, setFormData] = useState({
     name: "",
@@ -311,5 +311,4 @@ const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
   );
 };
 
-
-export default ContactSection
+export default ContactSection;
