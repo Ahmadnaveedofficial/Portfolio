@@ -64,7 +64,7 @@ const ContactSection = () => {
       setTimeout(() => setShowSuccess(false), 4000);
     } catch (err) {
       console.error("EmailJS error:", err);
-      setError("Message send nahi hua. Dobara try karo.");
+      setError("Message cannot Send! Please try again.");
     } finally {
       setIsSubmitting(false);
     }
