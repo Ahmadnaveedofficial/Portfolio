@@ -321,7 +321,7 @@ Your support motivates me to continue building innovative projects and contribut
 
 ### Thanks for Visiting My Portfolio ❤️
 
-**Built with React.js, SCSS, and Passion for Development**
+**Built with React.js, TailwindCSS,FrameMotion and Passion for Development**
 
 ⭐ Star this repository if you like it!
 
