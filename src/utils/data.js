@@ -29,8 +29,8 @@ import QuranProject from "../assets/QuranProject.jpeg";
 import RouteFinderProject from "../assets/RouteFinderProject.png";
 import VibeTubeBackendProject from "../assets/VibeTubeBackendProject.jpg";
 import HarmonyMusicAcademyProject from "../assets/harmony-music-academy.png";
-import HireCraftProject from "../HireCraftProject.png";
-import CollaborativeEditorProject from "../CollaborativeEditorProject.png";
+import HireCraftProject from "../assets/HireCraftProject.png";
+import CollaborativeEditorProject from "../assets/CollaborativeEditorProject.png";
 
 export const SKILLS_CATEGORY = [
   {
