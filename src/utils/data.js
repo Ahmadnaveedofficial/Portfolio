@@ -15,6 +15,7 @@ import {
   MapPin,
   Phone,
   Globe,
+  Bot,
 } from "lucide-react";
 
 import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
@@ -45,7 +46,6 @@ export const SKILLS_CATEGORY = [
       { name: "React", level: 95, color: "bg-blue-400" },
       { name: "Framer Motion", level: 93, color: "bg-pink-500" },
       { name: "Nextjs", level: 80, color: "bg-red-500" },
-      
     ],
   },
   {
@@ -56,7 +56,7 @@ export const SKILLS_CATEGORY = [
       { name: "Express.js", level: 88, color: "bg-gray-500" },
       { name: "REST APIs", level: 87, color: "bg-yellow-500" },
       { name: "JWT Authentication", level: 86, color: "bg-purple-500" },
-       { name: "Nextjs", level: 80, color: "bg-red-500" },
+      { name: "Nextjs", level: 80, color: "bg-red-500" },
     ],
   },
   {
@@ -78,11 +78,25 @@ export const SKILLS_CATEGORY = [
     skills: [
       { name: "Git", level: 90, color: "bg-orange-500" },
       { name: "GitHub", level: 88, color: "bg-gray-700" },
+      { name: "Docker", level: 80, color: "bg-blue-500" },
       { name: "Vercel", level: 85, color: "bg-black" },
       { name: "Netlify", level: 83, color: "bg-teal-500" },
       { name: "Cloudinary", level: 82, color: "bg-blue-400" },
       { name: "Azure", level: 80, color: "bg-blue-600" },
       { name: "AWS", level: 75, color: "bg-yellow-500" },
+    ],
+  },
+  {
+    title: "AI & Automation",
+    icon: Bot,
+    skills: [
+      { name: "n8n", level: 82, color: "bg-orange-600" },
+      { name: "Gemini AI", level: 80, color: "bg-blue-500" },
+      { name: "OpenAI API", level: 78, color: "bg-green-500" },
+      { name: "LangChain", level: 70, color: "bg-purple-500" },
+      { name: "Prompt Engineering", level: 85, color: "bg-pink-500" },
+      { name: "AI Agents", level: 72, color: "bg-yellow-500" },
+      { name: "Workflow Automation", level: 80, color: "bg-cyan-500" },
     ],
   },
 ];
@@ -93,7 +107,7 @@ export const TECH_STACK = [
   "Java",
   "Python",
   "JavaScript",
-   "TypeScript",
+  "TypeScript",
 
   // Frontend
   "HTML",
@@ -131,11 +145,20 @@ export const TECH_STACK = [
   "Azure",
   "AWS",
 
-  // Tools, Automation & Software
+  // AI & Automation
+  "n8n",
+  "Gemini AI",
+  "OpenAI API",
+  "LangChain",
+  "Prompt Engineering",
+  "AI Agents",
+  "Workflow Automation",
+  "Make (Integromat)",
+
+  // Tools & Software
   "VS Code",
   "Postman",
   "MS Office",
-  "n8n",
   "Multisim",
 ];
 
@@ -316,7 +339,7 @@ export const PROJECTS = [
 
 export const JOURNEY_STEPS = [
   {
-     id: 1,
+    id: 1,
     year: "2022",
     title: "Started Learning Programming",
     company: "Self-Employed",
@@ -326,7 +349,7 @@ export const JOURNEY_STEPS = [
     color: "bg-blue-500",
   },
   {
-     id: 2,
+    id: 2,
     year: "2022",
     title: "Explored Web Development",
     company: "Self-Employed",
@@ -336,7 +359,7 @@ export const JOURNEY_STEPS = [
     color: "bg-green-500",
   },
   {
-     id: 3,
+    id: 3,
     year: "2023",
     title: "Frontend Development",
     company: "Self-Employed",
@@ -346,7 +369,7 @@ export const JOURNEY_STEPS = [
     color: "bg-yellow-500",
   },
   {
-     id: 4,
+    id: 4,
     year: "2023",
     title: "Backend Development",
     company: "Self-Employed",
@@ -356,7 +379,7 @@ export const JOURNEY_STEPS = [
     color: "bg-purple-500",
   },
   {
-     id: 5,
+    id: 5,
     year: "2024",
     title: "Database & Cloud Integration",
     company: "Self-Employed",
@@ -366,7 +389,7 @@ export const JOURNEY_STEPS = [
     color: "bg-pink-500",
   },
   {
-     id: 6,
+    id: 6,
     year: "2024",
     title: "Full Stack Projects",
     company: "Self-Employed",
@@ -376,26 +399,37 @@ export const JOURNEY_STEPS = [
     color: "bg-orange-500",
   },
   {
-     id: 7,
+    id: 7,
     year: "2025",
-    title: "DevOps & Deployment",
+    title: "DevOps & Cloud Deployment",
     company: "Self-Employed",
     description:
-      "Deployed applications using Vercel, Netlify, and explored cloud platforms like Azure and AWS.",
+      "Deployed applications using Vercel, Netlify, Docker, and explored cloud platforms like Azure and AWS ECS.",
     icon: Cloud,
     color: "bg-cyan-500",
   },
   {
-     id: 8,
+    id: 8,
+    year: "2025",
+    title: "AI & Automation",
+    company: "Self-Employed",
+    description:
+      "Dived into AI integration and workflow automation using n8n, Gemini AI, OpenAI API, and LangChain to build intelligent, automated applications.",
+    icon: Bot,
+    color: "bg-violet-500",
+  },
+  {
+    id: 9,
     year: "2026",
     title: "Continuous Learning",
     company: "Self-Employed",
     description:
-      "Continuously improving skills by learning Docker, automation tools like n8n, and advanced backend concepts.",
+      "Continuously improving skills by exploring AI Agents, advanced prompt engineering, and cutting-edge backend and cloud-native concepts.",
     icon: Rocket,
     color: "bg-red-500",
   },
 ];
+
 export const PASSIONS = [
   {
     icon: Heart,
@@ -432,6 +466,12 @@ export const PASSIONS = [
     title: "Performance",
     description:
       "Driven to build lightning-fast applications by optimizing every layer of the stack.",
+  },
+  {
+    icon: Bot,
+    title: "AI & Automation",
+    description:
+      "Fascinated by the power of AI and automation to solve real-world problems, building intelligent workflows and AI-powered applications.",
   },
 ];
 
