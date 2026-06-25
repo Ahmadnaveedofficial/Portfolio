@@ -28,7 +28,7 @@ import LudoProject from "../assets/LudoProject.png";
 import QuranProject from "../assets/QuranProject.jpeg";
 import RouteFinderProject from "../assets/RouteFinderProject.png";
 import VibeTubeBackendProject from "../assets/VibeTubeBackendProject.jpg";
-import HarmonyMusicAcademyProject from "../assets/harmony-music-academy.png";
+import HarmonyMusicAcademyProject from "../assets/HarmonyMusicAcademyProject.png";
 import HireCraftProject from "../assets/HireCraftProject.png";
 import CollaborativeEditorProject from "../assets/CollaborativeEditorProject.png";
 
