@@ -43,23 +43,23 @@ const HeroSection = () => {
     },
   };
 
-const socials = [
-  {
-    icon: FiGithub,
-    href: "https://github.com/Ahmadnaveedofficial",
-    label: "GitHub",
-  },
-  {
-    icon: FiLinkedin,
-    href: "https://www.linkedin.com/in/ahmad-naveed-7b539521a/",
-    label: "LinkedIn",
-  },
-  {
-    icon: Mail,
-    href: "mailto:ahmadnaveedofficial05@gmail.com",
-    label: "Email",
-  },
-];
+  const socials = [
+    {
+      icon: FiGithub,
+      href: "https://github.com/Ahmadnaveedofficial",
+      label: "GitHub",
+    },
+    {
+      icon: FiLinkedin,
+      href: "https://www.linkedin.com/in/ahmad-naveed-7b539521a/",
+      label: "LinkedIn",
+    },
+    {
+      icon: Mail,
+      href: "mailto:ahmadnaveedofficial05@gmail.com",
+      label: "Email",
+    },
+  ];
 
   return (
     <div
@@ -142,7 +142,7 @@ const socials = [
                   isDarkMode ? "text-gray-500" : "text-gray-600"
                 }`}
               >
-                Full Stack Developer
+                AI Automation & Full Stack Engineer
               </motion.div>
 
               {/* Headline */}
