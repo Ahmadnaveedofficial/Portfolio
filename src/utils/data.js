@@ -93,7 +93,7 @@ export const TECH_STACK = [
   "Java",
   "Python",
   "JavaScript",
-   "TypeScript"
+   "TypeScript",
 
   // Frontend
   "HTML",
@@ -101,7 +101,7 @@ export const TECH_STACK = [
   "Tailwind CSS",
   "React",
   "Framer Motion",
-  "Nextjs"
+  "Nextjs",
 
   // Backend
   "Node.js",
