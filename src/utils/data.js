@@ -28,6 +28,9 @@ import LudoProject from "../assets/LudoProject.png";
 import QuranProject from "../assets/QuranProject.jpeg";
 import RouteFinderProject from "../assets/RouteFinderProject.png";
 import VibeTubeBackendProject from "../assets/VibeTubeBackendProject.jpg";
+import HarmonyMusicAcademyProject from "../assets/harmony-music-academy.png";
+import HireCraftProject from "../HireCraftProject.png";
+import CollaborativeEditorProject from "../CollaborativeEditorProject.png";
 
 export const SKILLS_CATEGORY = [
   {
@@ -37,9 +40,12 @@ export const SKILLS_CATEGORY = [
       { name: "HTML", level: 100, color: "bg-orange-500" },
       { name: "CSS", level: 88, color: "bg-blue-500" },
       { name: "JavaScript", level: 90, color: "bg-yellow-400" },
+      { name: "TypeScript", level: 75, color: "bg-yellow-600" },
       { name: "Tailwind CSS", level: 85, color: "bg-cyan-500" },
       { name: "React", level: 95, color: "bg-blue-400" },
       { name: "Framer Motion", level: 93, color: "bg-pink-500" },
+      { name: "Nextjs", level: 80, color: "bg-red-500" },
+      
     ],
   },
   {
@@ -50,6 +56,7 @@ export const SKILLS_CATEGORY = [
       { name: "Express.js", level: 88, color: "bg-gray-500" },
       { name: "REST APIs", level: 87, color: "bg-yellow-500" },
       { name: "JWT Authentication", level: 86, color: "bg-purple-500" },
+       { name: "Nextjs", level: 80, color: "bg-red-500" },
     ],
   },
   {
@@ -58,6 +65,7 @@ export const SKILLS_CATEGORY = [
     skills: [
       { name: "MongoDB", level: 85, color: "bg-green-600" },
       { name: "Mongoose", level: 83, color: "bg-red-500" },
+      { name: "PostgreSQL", level: 80, color: "bg-green-500" },
       { name: "SQL", level: 80, color: "bg-blue-500" },
       { name: "Prisma", level: 78, color: "bg-indigo-500" },
       { name: "Firebase", level: 82, color: "bg-yellow-500" },
@@ -85,6 +93,7 @@ export const TECH_STACK = [
   "Java",
   "Python",
   "JavaScript",
+   "TypeScript"
 
   // Frontend
   "HTML",
@@ -92,6 +101,7 @@ export const TECH_STACK = [
   "Tailwind CSS",
   "React",
   "Framer Motion",
+  "Nextjs"
 
   // Backend
   "Node.js",
@@ -249,6 +259,67 @@ export const PROJECTS = [
     featured: false,
     category: "Academic",
   },
+  {
+  id: 10,
+  title: "Harmony Music Academy",
+  description:
+    "A modern music academy website built with Next.js featuring dynamic course pages, instructor profiles, webinar management, responsive UI, and optimized performance.",
+  image: HarmonyMusicAcademyProject,
+  tags: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "React",
+    "Vercel"
+  ],
+  liveUrl: "https://harmony-music-academy-five.vercel.app/",
+  githubUrl: "https://github.com/Ahmadnaveedofficial/Harmony-Music-Academy",
+  featured: true,
+  category: "Frontend",
+},{
+  id: 11,
+  title: "HireCraft AI",
+  description:
+    "An AI-powered interview preparation and resume optimization platform that analyzes resumes against job descriptions, generates personalized interview questions, provides detailed feedback, and helps candidates improve their job readiness.",
+  image: HireCraftProject,
+  tags: [
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Gemini AI",
+    "Tailwind CSS"
+  ],
+  liveUrl: "https://github.com/Ahmadnaveedofficial/HireCraft-AI",
+  githubUrl: "https://github.com/Ahmadnaveedofficial/HireCraft-AI",
+  featured: true,
+  category: "AI Full Stack",
+},
+{
+  id: 12,
+  title: "Real-Time Collaborative Code Editor",
+  description:
+    "A real-time collaborative code editor that enables multiple users to write and edit code simultaneously with instant synchronization using Yjs CRDTs, Socket.IO, Docker, and AWS cloud deployment.",
+  image: CollaborativeEditorProject,
+  tags: [
+    "React",
+    "Node.js",
+    "Express",
+    "Socket.IO",
+    "Yjs",
+    "Monaco Editor",
+    "Docker",
+    "AWS ECS",
+    "AWS ECR",
+    "ALB"
+  ],
+  liveUrl:
+    "http://editor-ecs-abl-886231062.ap-northeast-1.elb.amazonaws.com",
+  githubUrl:
+    "https://github.com/Ahmadnaveedofficial/Real-Time-Collaborative-Editor",
+  featured: true,
+  category: "Cloud Full Stack",
+},
 ];
 
 export const JOURNEY_STEPS = [
