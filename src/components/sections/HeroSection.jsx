@@ -43,11 +43,23 @@ const HeroSection = () => {
     },
   };
 
-  const socials = [
-    { icon: FiGithub, href: "#", label: "GitHub" },
-    { icon: FiLinkedin, href: "#", label: "LinkedIn" },
-    { icon: Mail, href: "#", label: "Email" },
-  ];
+const socials = [
+  {
+    icon: FiGithub,
+    href: "https://github.com/Ahmadnaveedofficial",
+    label: "GitHub",
+  },
+  {
+    icon: FiLinkedin,
+    href: "https://www.linkedin.com/in/ahmad-naveed-7b539521a/",
+    label: "LinkedIn",
+  },
+  {
+    icon: Mail,
+    href: "mailto:ahmadnaveedofficial05@gmail.com",
+    label: "Email",
+  },
+];
 
   return (
     <div

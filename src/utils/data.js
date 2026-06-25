@@ -150,6 +150,62 @@ export const STATS = [
 export const PROJECTS = [
   {
     id: 1,
+    title: "Real-Time Collaborative Code Editor",
+    description:
+      "A real-time collaborative code editor that enables multiple users to write and edit code simultaneously with instant synchronization using Yjs CRDTs, Socket.IO, Docker, and AWS cloud deployment.",
+    image: CollaborativeEditorProject,
+    tags: [
+      "React",
+      "Node.js",
+      "Express",
+      "Socket.IO",
+      "Yjs",
+      "Monaco Editor",
+      "Docker",
+      "AWS ECS",
+      "AWS ECR",
+      "ALB",
+    ],
+    liveUrl:
+      "http://editor-ecs-abl-886231062.ap-northeast-1.elb.amazonaws.com",
+    githubUrl:
+      "https://github.com/Ahmadnaveedofficial/Real-Time-Collaborative-Editor",
+    featured: true,
+    category: "Cloud Full Stack",
+  },
+  {
+    id: 2,
+    title: "HireCraft AI",
+    description:
+      "An AI-powered interview preparation and resume optimization platform that analyzes resumes against job descriptions, generates personalized interview questions, provides detailed feedback, and helps candidates improve their job readiness.",
+    image: HireCraftProject,
+    tags: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Gemini AI",
+      "Tailwind CSS",
+    ],
+    liveUrl: "https://github.com/Ahmadnaveedofficial/HireCraft-AI",
+    githubUrl: "https://github.com/Ahmadnaveedofficial/HireCraft-AI",
+    featured: true,
+    category: "AI Full Stack",
+  },
+  {
+    id: 3,
+    title: "Harmony Music Academy",
+    description:
+      "A modern music academy website built with Next.js featuring dynamic course pages, instructor profiles, webinar management, responsive UI, and optimized performance.",
+    image: HarmonyMusicAcademyProject,
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Vercel"],
+    liveUrl: "https://harmony-music-academy-five.vercel.app/",
+    githubUrl: "https://github.com/Ahmadnaveedofficial/Harmony-Music-Academy",
+    featured: true,
+    category: "Frontend",
+  },
+  {
+    id: 4,
     title: "Car Rental System",
     description:
       "A full-stack car rental application with booking system, authentication, and admin features.",
@@ -161,7 +217,19 @@ export const PROJECTS = [
     category: "Full Stack",
   },
   {
-    id: 2,
+    id: 5,
+    title: "AN Blog",
+    description:
+      "A full-stack blogging platform with authentication, post management, and responsive UI.",
+    image: ANBlogProject,
+    tags: ["React", "Appwrite", "Tailwind CSS"],
+    liveUrl: "https://anblog-sage.vercel.app/",
+    githubUrl: "https://github.com/Ahmadnaveedofficial/AN-Blog",
+    featured: true,
+    category: "Full Stack",
+  },
+  {
+    id: 6,
     title: "Chat Application",
     description:
       "Real-time chat application using WebSockets with authentication and messaging features.",
@@ -173,20 +241,7 @@ export const PROJECTS = [
     category: "Full Stack",
   },
   {
-    id: 3,
-    title: "AN Blog",
-    description:
-      "A full-stack blogging platform with authentication, post management, and responsive UI.",
-    image: ANBlogProject,
-    tags: ["React", "Appwrite", "Tailwind CSS"],
-    liveUrl: "https://anblog-sage.vercel.app/",
-    githubUrl: "https://github.com/Ahmadnaveedofficial/AN-Blog",
-    featured: true,
-    category: "Full Stack",
-  },
-
-  {
-    id: 4,
+    id: 7,
     title: "VibeTube Backend",
     description:
       "Backend system for a video platform with authentication, uploads, and API handling.",
@@ -198,7 +253,7 @@ export const PROJECTS = [
     category: "Backend",
   },
   {
-    id: 5,
+    id: 8,
     title: "Doctor Appointment (n8n)",
     description:
       "Automation-based doctor appointment system using n8n workflows and integrations.",
@@ -209,8 +264,20 @@ export const PROJECTS = [
     featured: false,
     category: "Automation",
   },
-   {
-    id: 6,
+  {
+    id: 9,
+    title: "Route Finder",
+    description:
+      "A pathfinding application implementing shortest path algorithms like Dijkstra.",
+    image: RouteFinderProject,
+    tags: ["C++", "Algorithms", "DSA"],
+    liveUrl: "https://github.com/Ahmadnaveedofficial/Route-Finder",
+    githubUrl: "https://github.com/Ahmadnaveedofficial/Route-Finder",
+    featured: false,
+    category: "Algorithm",
+  },
+  {
+    id: 10,
     title: "Ludo Game",
     description:
       "A fun interactive Ludo game with custom UI and gameplay logic.",
@@ -221,9 +288,8 @@ export const PROJECTS = [
     featured: false,
     category: "Game",
   },
-
   {
-    id: 7,
+    id: 11,
     title: "Quran App",
     description:
       "A web app for reading Quran with clean UI and user-friendly navigation.",
@@ -234,21 +300,8 @@ export const PROJECTS = [
     featured: false,
     category: "Mobile App",
   },
- 
   {
-    id: 8,
-    title: "Route Finder",
-    description:
-      "A pathfinding application implementing shortest path algorithms like Dijkstra.",
-    image: RouteFinderProject,
-    tags: ["C++", "Algorithms","DSA"],
-    liveUrl: "https://github.com/Ahmadnaveedofficial/Route-Finder",
-    githubUrl: "https://github.com/Ahmadnaveedofficial/Route-Finder",
-    featured: false,
-    category: "Algorithm",
-  },
-  {
-    id: 9,
+    id: 12,
     title: "DLD Project",
     description:
       "Digital Logic Design project implemented using simulation tools.",
@@ -259,67 +312,6 @@ export const PROJECTS = [
     featured: false,
     category: "Academic",
   },
-  {
-  id: 10,
-  title: "Harmony Music Academy",
-  description:
-    "A modern music academy website built with Next.js featuring dynamic course pages, instructor profiles, webinar management, responsive UI, and optimized performance.",
-  image: HarmonyMusicAcademyProject,
-  tags: [
-    "Next.js",
-    "TypeScript",
-    "Tailwind CSS",
-    "React",
-    "Vercel"
-  ],
-  liveUrl: "https://harmony-music-academy-five.vercel.app/",
-  githubUrl: "https://github.com/Ahmadnaveedofficial/Harmony-Music-Academy",
-  featured: true,
-  category: "Frontend",
-},{
-  id: 11,
-  title: "HireCraft AI",
-  description:
-    "An AI-powered interview preparation and resume optimization platform that analyzes resumes against job descriptions, generates personalized interview questions, provides detailed feedback, and helps candidates improve their job readiness.",
-  image: HireCraftProject,
-  tags: [
-    "React",
-    "Node.js",
-    "Express",
-    "MongoDB",
-    "Gemini AI",
-    "Tailwind CSS"
-  ],
-  liveUrl: "https://github.com/Ahmadnaveedofficial/HireCraft-AI",
-  githubUrl: "https://github.com/Ahmadnaveedofficial/HireCraft-AI",
-  featured: true,
-  category: "AI Full Stack",
-},
-{
-  id: 12,
-  title: "Real-Time Collaborative Code Editor",
-  description:
-    "A real-time collaborative code editor that enables multiple users to write and edit code simultaneously with instant synchronization using Yjs CRDTs, Socket.IO, Docker, and AWS cloud deployment.",
-  image: CollaborativeEditorProject,
-  tags: [
-    "React",
-    "Node.js",
-    "Express",
-    "Socket.IO",
-    "Yjs",
-    "Monaco Editor",
-    "Docker",
-    "AWS ECS",
-    "AWS ECR",
-    "ALB"
-  ],
-  liveUrl:
-    "http://editor-ecs-abl-886231062.ap-northeast-1.elb.amazonaws.com",
-  githubUrl:
-    "https://github.com/Ahmadnaveedofficial/Real-Time-Collaborative-Editor",
-  featured: true,
-  category: "Cloud Full Stack",
-},
 ];
 
 export const JOURNEY_STEPS = [
@@ -468,7 +460,7 @@ export const SOCIAL_LINKS = [
   {
     name: "Email",
     icon: Mail,
-    url: "mailto:ahmadnaveedofficail05@gmail.com",
+    url: "mailto:ahmadnaveedofficial05@gmail.com",
     color: "hover:text-green-400",
     bgColor: "hover:bg-green-500/10",
   },
@@ -488,6 +480,6 @@ export const CONTACT_INFO = [
   {
     icon: Mail,
     label: "Email",
-    value: "ahmadnaveedofficail05@gmail.com",
+    value: "ahmadnaveedofficial05@gmail.com",
   },
 ];
