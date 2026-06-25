@@ -273,7 +273,7 @@ const HeroSection = () => {
                   isDarkMode ? "text-gray-500" : "text-gray-600"
                 }`}
               >
-                Full Stack Developer
+             AI Automation & Full Stack Engineer
               </motion.div>
 
               {/* Headline */}
