@@ -273,7 +273,7 @@ const HeroSection = () => {
                   isDarkMode ? "text-gray-500" : "text-gray-600"
                 }`}
               >
-             AI Automation & Full Stack Engineer
+                AI Automation & Full Stack Engineer
               </motion.div>
 
               {/* Headline */}
@@ -368,49 +368,126 @@ const HeroSection = () => {
               initial="hidden"
               animate="visible"
               variants={imageVariants}
-              className="flex justify-center lg:justify-end"
+              className="flex justify-center items-center"
             >
-              <div className="relative">
-                {/* Tech stack label */}
-                <motion.div
-                  variants={itemsVariants}
-                  className="flex items-center space-x-8 text-xs uppercase tracking-widest absolute -top-16 -left-28"
-                ></motion.div>
-
-                {/* Image */}
-                <motion.div
-                  whileHover={{ scale: 1.02 }}
-                  className={`w-80 h-96 rounded-3xl overflow-hidden border-4 shadow-2xl ${
-                    isDarkMode ? "border-gray-800" : "border-gray-300"
+              <motion.div
+                animate={{
+                  y: [0, -12, 0],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                whileHover={{
+                  scale: 1.04,
+                  rotate: -1,
+                }}
+                className="relative"
+              >
+                {/* Glass Card */}
+                <div
+                  className={`relative p-8 rounded-[40px] backdrop-blur-xl ${
+                    isDarkMode
+                      ? "bg-white/5 border border-white/10"
+                      : "bg-white/50 border border-white/60"
                   }`}
                 >
-                  <img
-                    src={profile}
-                    alt="profile"
-                    className="w-full h-full object-cover"
-                  />
-                </motion.div>
+                  {/* Blue Glow */}
+                  <div className="absolute inset-0 rounded-[40px] bg-blue-500/10 blur-3xl" />
 
-                {/* Decorative rings */}
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{
-                    duration: 20,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-                  className="absolute -inset-4 rounded-3xl border border-blue-500/20 pointer-events-none"
-                />
-                <motion.div
-                  animate={{ rotate: -360 }}
-                  transition={{
-                    duration: 30,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-                  className="absolute -inset-8 rounded-3xl border border-purple-500/10 pointer-events-none"
-                />
-              </div>
+                  {/* Profile Image */}
+                  <motion.div
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ duration: 0.3 }}
+                    className={`relative w-80 h-96 rounded-full overflow-hidden border-4 ${
+                      isDarkMode
+                        ? "border-gray-700 shadow-[0_0_80px_rgba(59,130,246,0.35)]"
+                        : "border-white shadow-[0_0_70px_rgba(59,130,246,0.25)]"
+                    }`}
+                  >
+                    <img
+                      src={profile}
+                      alt="profile"
+                      className="w-full h-full object-cover"
+                    />
+                  </motion.div>
+
+                  {/* Ring 1 */}
+                  <motion.div
+                    animate={{
+                      rotate: 360,
+                      scale: [1, 1.03, 1],
+                      opacity: [0.3, 0.7, 0.3],
+                    }}
+                    transition={{
+                      duration: 18,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
+                    className="absolute -inset-4 rounded-full border border-blue-500/30"
+                  />
+
+                  {/* Ring 2 */}
+                  <motion.div
+                    animate={{
+                      rotate: -360,
+                      scale: [1.05, 1.08, 1.05],
+                      opacity: [0.15, 0.4, 0.15],
+                    }}
+                    transition={{
+                      duration: 30,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
+                    className="absolute -inset-10 rounded-full border border-cyan-400/20"
+                  />
+
+                  {/* Ring 3 */}
+                  <motion.div
+                    animate={{
+                      rotate: 360,
+                      scale: [1.1, 1.14, 1.1],
+                      opacity: [0.08, 0.2, 0.08],
+                    }}
+                    transition={{
+                      duration: 42,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
+                    className="absolute -inset-16 rounded-full border border-purple-500/10"
+                  />
+
+                  {/* Floating Dot */}
+                  <motion.div
+                    animate={{
+                      y: [0, -15, 0],
+                      x: [0, 8, 0],
+                      scale: [1, 1.4, 1],
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                    className="absolute top-6 right-8 w-4 h-4 rounded-full bg-blue-500 shadow-[0_0_25px_rgba(59,130,246,1)]"
+                  />
+
+                  {/* Floating Gradient Circle */}
+                  <motion.div
+                    animate={{
+                      y: [0, -20, 0],
+                      x: [0, -10, 0],
+                    }}
+                    transition={{
+                      duration: 5,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                    className="absolute bottom-8 -left-5 w-8 h-8 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 blur-[2px]"
+                  />
+                </div>
+              </motion.div>
             </motion.div>
           </div>
         </div>
