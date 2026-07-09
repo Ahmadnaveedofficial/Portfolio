@@ -22,17 +22,17 @@ const ProjectCard = ({ project, index, isDarkMode }) => {
         y: -8,
         transition: { duration: 0.3, ease: "easeOut" },
       }}
-      className="group relative"
+      className="group relative h-full"
     >
       <div
-        className={`rounded-2xl overflow-hidden border transition-all duration-500 ${
+        className={`h-full flex flex-col rounded-2xl overflow-hidden border transition-all duration-500 ${
           isDarkMode
             ? "bg-gray-900/50 border-gray-800 hover:border-gray-700 hover:shadow-2xl hover:shadow-blue-500/10"
             : "bg-white/80 border-gray-200 hover:border-gray-300 hover:shadow-2xl hover:shadow-blue-500/10"
         } backdrop-blur-sm`}
       >
         {/* Project image */}
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden shrink-0">
           <img
             src={project.image}
             alt={project.title}
@@ -97,17 +97,17 @@ const ProjectCard = ({ project, index, isDarkMode }) => {
         </div>
 
         {/* project content */}
-        <div className="p-6">
+        <div className="p-6 flex flex-col flex-1">
           <h3 className="text-xl font-medium mb-3 group-hover:text-blue-500 transition-colors">
             {project.title}
           </h3>
           <p
-            className={`text-sm leading-relaxed mb-4 ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}
+            className={`text-sm leading-relaxed mb-4 flex-1 ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}
           >
             {project.description}
           </p>
           {/* tech stack tags */}
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 mt-auto">
             {project.tags.map((tag, index) => (
               <span
                 key={index}

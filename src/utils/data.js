@@ -171,12 +171,14 @@ export const STATS = [
   { number: "100%", label: "Client Satisfaction" },
 ];
 
+
+
 export const PROJECTS = [
   {
     id: 1,
     title: "Real-Time Collaborative Code Editor",
     description:
-      "A real-time collaborative code editor that enables multiple users to write and edit code simultaneously with instant synchronization using Yjs CRDTs, Socket.IO, Docker, and AWS cloud deployment.",
+      "Built a real-time collaborative code editor where multiple users can write and edit code together without conflicts. It uses Yjs CRDTs and Socket.IO for instant synchronization, Monaco Editor for a VS Code-like coding experience, and Docker for containerization. The application is deployed on AWS ECS with ECR and an Application Load Balancer, making it scalable and production-ready.",
     image: CollaborativeEditorProject,
     tags: [
       "React",
@@ -184,11 +186,13 @@ export const PROJECTS = [
       "Express",
       "Socket.IO",
       "Yjs",
+      "CRDT",
       "Monaco Editor",
       "Docker",
       "AWS ECS",
       "AWS ECR",
-      "ALB",
+      "Application Load Balancer",
+      "Real-Time Collaboration",
     ],
     liveUrl:
       "http://editor-ecs-abl-886231062.ap-northeast-1.elb.amazonaws.com",
@@ -197,11 +201,12 @@ export const PROJECTS = [
     featured: true,
     category: "Cloud Full Stack",
   },
+
   {
     id: 2,
     title: "HireCraft AI",
     description:
-      "An AI-powered interview preparation and resume optimization platform that analyzes resumes against job descriptions, generates personalized interview questions, provides detailed feedback, and helps candidates improve their job readiness.",
+      "Built an AI-powered platform that helps job seekers improve their resumes and prepare for interviews. Users can compare their resume with a job description, receive AI suggestions, generate personalized interview questions, and get detailed feedback using Google's Gemini AI to improve their chances of landing a job.",
     image: HireCraftProject,
     tags: [
       "React",
@@ -210,149 +215,241 @@ export const PROJECTS = [
       "MongoDB",
       "Gemini AI",
       "Tailwind CSS",
+      "JWT",
+      "REST API",
+      "Resume Analysis",
+      "Interview Preparation",
+      "AI",
     ],
     liveUrl: "https://github.com/Ahmadnaveedofficial/HireCraft-AI",
     githubUrl: "https://github.com/Ahmadnaveedofficial/HireCraft-AI",
     featured: true,
     category: "AI Full Stack",
   },
-  
+
   {
-  id: 3,
-  title: "Mystery Message",
-  description:
-"A full-stack anonymous messaging platform built with Next.js, TypeScript, and MongoDB. Features secure authentication, AI-powered message suggestions, email verification, and a personalized user dashboard.",
-  image: MysteryMessageProject,
-  tags: [
-    "Next.js",
-    "TypeScript",
-    "React",
-    "Tailwind CSS",
-    "Shadcn UI",
-    "MongoDB",
-    "NextAuth",
-    "Zod",
-  ],
-  liveUrl: "https://mstry-message-roan.vercel.app",
-  githubUrl: "https://github.com/Ahmadnaveedofficial/nextApp",
-  featured: true,
-  category: "Full Stack",
-},
-{
+    id: 3,
+    title: "Mystery Message",
+    description:
+      "A full-stack anonymous messaging platform where users can receive honest feedback without revealing the sender's identity. It includes secure authentication, email verification, AI-powered message suggestions, and a personal dashboard to manage incoming messages through a clean and responsive interface.",
+    image: MysteryMessageProject,
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "MongoDB",
+      "NextAuth",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Zod",
+      "Gemini AI",
+      "Authentication",
+    ],
+    liveUrl: "https://mstry-message-roan.vercel.app",
+    githubUrl: "https://github.com/Ahmadnaveedofficial/nextApp",
+    featured: true,
+    category: "Full Stack",
+  },
+
+  {
     id: 4,
     title: "Harmony Music Academy",
     description:
-      "A modern music academy website built with Next.js featuring dynamic course pages, instructor profiles, webinar management, responsive UI, and optimized performance.",
+      "Developed a modern music academy website using Next.js and TypeScript. The platform showcases music courses, instructor profiles, and upcoming webinars with a responsive design, smooth user experience, and fast performance optimized for both desktop and mobile devices.",
     image: HarmonyMusicAcademyProject,
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Vercel"],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Responsive Design",
+      "Vercel",
+    ],
     liveUrl: "https://harmony-music-academy-five.vercel.app/",
     githubUrl: "https://github.com/Ahmadnaveedofficial/Harmony-Music-Academy",
     featured: true,
     category: "Frontend",
   },
+
   {
     id: 5,
     title: "Car Rental System",
     description:
-      "A full-stack car rental application with booking system, authentication, and admin features.",
+      "Built a full-stack car rental application where users can browse available cars, make bookings, and manage their reservations. It also includes secure authentication and an admin dashboard for managing vehicles, bookings, and customer information.",
     image: CarProject,
-    tags: ["React", "Node.js", "Express", "MongoDB"],
+    tags: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "REST API",
+      "Tailwind CSS",
+      "Authentication",
+    ],
     liveUrl: "https://car-rental-roan-nu.vercel.app/",
     githubUrl: "https://github.com/Ahmadnaveedofficial/CarRental",
     featured: true,
     category: "Full Stack",
   },
+
   {
     id: 6,
     title: "AN Blog",
     description:
-      "A full-stack blogging platform with authentication, post management, and responsive UI.",
+      "A full-stack blogging platform that allows users to create, edit, publish, and manage blog posts with ease. Built using React and Appwrite, it features secure authentication, image uploads, a rich text editor, and a responsive interface for a smooth writing experience.",
     image: ANBlogProject,
-    tags: ["React", "Appwrite", "Tailwind CSS"],
+    tags: [
+      "React",
+      "Appwrite",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "React Router",
+      "TinyMCE",
+      "Authentication",
+    ],
     liveUrl: "https://anblog-sage.vercel.app/",
     githubUrl: "https://github.com/Ahmadnaveedofficial/AN-Blog",
     featured: true,
     category: "Full Stack",
   },
+
   {
     id: 7,
     title: "Chat Application",
     description:
-      "Real-time chat application using WebSockets with authentication and messaging features.",
+      "A real-time chat application built with Socket.IO that enables users to exchange messages instantly. It supports secure authentication, private conversations, online user status, and a responsive interface designed for smooth and reliable communication.",
     image: ChatProject,
-    tags: ["React", "Node.js", "Socket.io"],
-    liveUrl: "",
+    tags: [
+      "React",
+      "Node.js",
+      "Express",
+      "Socket.IO",
+      "MongoDB",
+      "JWT",
+      "WebSockets",
+      "Real-Time Chat",
+    ],
+    liveUrl: "https://github.com/Ahmadnaveedofficial/Quick-Chat",
     githubUrl: "https://github.com/Ahmadnaveedofficial/Quick-Chat",
     featured: true,
     category: "Full Stack",
   },
-  {
+    {
     id: 8,
     title: "VibeTube Backend",
     description:
-      "Backend system for a video platform with authentication, uploads, and API handling.",
+      "Developed the backend for a video-sharing platform using Node.js, Express, and MongoDB. It provides secure authentication, video uploads, playlist management, likes, comments, subscriptions, and RESTful APIs designed to support a scalable frontend application.",
     image: VibeTubeBackendProject,
-    tags: ["Node.js", "Express", "MongoDB"],
+    tags: [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "REST API",
+      "Cloudinary",
+      "Backend Development",
+    ],
     liveUrl: "https://github.com/Ahmadnaveedofficial/VibeTube-Backend",
     githubUrl: "https://github.com/Ahmadnaveedofficial/VibeTube-Backend",
     featured: false,
-    category: "Backend",
+   category: "Backend API"
   },
+
   {
     id: 9,
     title: "Doctor Appointment (n8n)",
     description:
-      "Automation-based doctor appointment system using n8n workflows and integrations.",
+      "Built an automated doctor appointment workflow using n8n to simplify the booking process. The workflow connects multiple APIs and services to handle appointment requests, confirmations, reminders, and notifications without requiring manual intervention.",
     image: DoctorAppUsingn8n,
-    tags: ["n8n", "Automation", "API"],
+    tags: [
+      "n8n",
+      "Automation",
+      "Workflow Automation",
+      "API Integration",
+      "Webhook",
+      "No-Code",
+    ],
     liveUrl: "",
     githubUrl: "",
     featured: false,
-    category: "Automation",
+    category: "Automation & AI"
   },
+
   {
     id: 10,
     title: "Route Finder",
     description:
-      "A pathfinding application implementing shortest path algorithms like Dijkstra.",
+      "Developed a C++ route-finding application that uses Dijkstra's algorithm to calculate the shortest path between cities. The project demonstrates graph data structures, pathfinding algorithms, and problem-solving techniques commonly used in navigation systems.",
     image: RouteFinderProject,
-    tags: ["C++", "Algorithms", "DSA"],
+    tags: [
+      "C++",
+      "Data Structures",
+      "Algorithms",
+      "Dijkstra",
+      "Graphs",
+      "DSA",
+    ],
     liveUrl: "https://github.com/Ahmadnaveedofficial/Route-Finder",
     githubUrl: "https://github.com/Ahmadnaveedofficial/Route-Finder",
     featured: false,
     category: "Algorithm",
   },
+
   {
     id: 11,
     title: "Ludo Game",
     description:
-      "A fun interactive Ludo game with custom UI and gameplay logic.",
+      "Created a desktop-based Ludo game using Java Swing and AWT. It includes dice rolling, player movement, turn-based gameplay, and a custom graphical interface, demonstrating object-oriented programming concepts and event-driven application development.",
     image: LudoProject,
-    tags: ["Java", "Java Swing", "Java Awt"],
+    tags: [
+      "Java",
+      "Java Swing",
+      "Java AWT",
+      "OOP",
+      "Desktop Application",
+      "Game Development",
+    ],
     liveUrl: "https://github.com/Ahmadnaveedofficial/LudoGame-Java",
     githubUrl: "https://github.com/Ahmadnaveedofficial/LudoGame-Java",
     featured: false,
     category: "Game",
   },
+
   {
     id: 12,
     title: "Quran App",
     description:
-      "A web app for reading Quran with clean UI and user-friendly navigation.",
+      "Built a mobile Quran application using MIT App Inventor that provides offline Quran reading with simple navigation and an easy-to-use interface. The app was designed to make Quran reading accessible for users of all ages with a clean and lightweight experience.",
     image: QuranProject,
-    tags: ["Mit", "App Inventor"],
+    tags: [
+      "MIT App Inventor",
+      "Android",
+      "Mobile Development",
+      "UI Design",
+      "Offline App",
+    ],
     liveUrl: "",
     githubUrl: "https://github.com/Ahmadnaveedofficial/Software-Engineering",
     featured: false,
     category: "Mobile App",
   },
+
   {
     id: 13,
     title: "DLD Project",
     description:
-      "Digital Logic Design project implemented using simulation tools.",
+      "Designed and simulated digital circuits using Multisim as part of a Digital Logic Design project. The project demonstrates logic gates, combinational and sequential circuits, and practical circuit analysis to strengthen core electronics and computer engineering concepts.",
     image: DLDProject,
-    tags: ["Multisim", "Electronics"],
+    tags: [
+      "Digital Logic Design",
+      "Multisim",
+      "Logic Gates",
+      "Digital Circuits",
+      "Electronics",
+    ],
     liveUrl: "",
     githubUrl: "",
     featured: false,
