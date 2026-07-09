@@ -216,20 +216,9 @@ export const PROJECTS = [
     featured: true,
     category: "AI Full Stack",
   },
+  
   {
-    id: 3,
-    title: "Harmony Music Academy",
-    description:
-      "A modern music academy website built with Next.js featuring dynamic course pages, instructor profiles, webinar management, responsive UI, and optimized performance.",
-    image: HarmonyMusicAcademyProject,
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Vercel"],
-    liveUrl: "https://harmony-music-academy-five.vercel.app/",
-    githubUrl: "https://github.com/Ahmadnaveedofficial/Harmony-Music-Academy",
-    featured: true,
-    category: "Frontend",
-  },
-  {
-  id: 4,
+  id: 3,
   title: "Mystery Message",
   description:
 "A full-stack anonymous messaging platform built with Next.js, TypeScript, and MongoDB. Features secure authentication, AI-powered message suggestions, email verification, and a personalized user dashboard.",
@@ -249,6 +238,18 @@ export const PROJECTS = [
   featured: true,
   category: "Full Stack",
 },
+{
+    id: 4,
+    title: "Harmony Music Academy",
+    description:
+      "A modern music academy website built with Next.js featuring dynamic course pages, instructor profiles, webinar management, responsive UI, and optimized performance.",
+    image: HarmonyMusicAcademyProject,
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Vercel"],
+    liveUrl: "https://harmony-music-academy-five.vercel.app/",
+    githubUrl: "https://github.com/Ahmadnaveedofficial/Harmony-Music-Academy",
+    featured: true,
+    category: "Frontend",
+  },
   {
     id: 5,
     title: "Car Rental System",
