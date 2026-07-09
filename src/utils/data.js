@@ -32,6 +32,7 @@ import VibeTubeBackendProject from "../assets/VibeTubeBackendProject.jpg";
 import HarmonyMusicAcademyProject from "../assets/HarmonyMusicAcademyProject.png";
 import HireCraftProject from "../assets/HireCraftProject.png";
 import CollaborativeEditorProject from "../assets/CollaborativeEditorProject.png";
+import MysteryMessageProject from "../assets/MysteryMessageProject.png";
 
 export const SKILLS_CATEGORY = [
   {
@@ -228,7 +229,34 @@ export const PROJECTS = [
     category: "Frontend",
   },
   {
-    id: 4,
+  id: 4,
+  title: "Mystery Message",
+  description:
+    "A modern full-stack anonymous messaging platform built with Next.js where users can securely create an account, verify their email, receive anonymous messages through a unique public profile, manage messages from a personalized dashboard, control message acceptance, and generate AI-powered message suggestions using Google Gemini.",
+  image: MysteryMessageProject,
+  tags: [
+    "Next.js",
+    "TypeScript",
+    "React",
+    "Tailwind CSS",
+    "Shadcn UI",
+    "MongoDB",
+    "Mongoose",
+    "NextAuth",
+    "Zod",
+    "React Hook Form",
+    "Nodemailer",
+    "Gemini AI",
+    "AI SDK",
+    "Vercel",
+  ],
+  liveUrl: "https://mstry-message-roan.vercel.app",
+  githubUrl: "https://github.com/Ahmadnaveedofficial/nextApp",
+  featured: true,
+  category: "Full Stack",
+},
+  {
+    id: 5,
     title: "Car Rental System",
     description:
       "A full-stack car rental application with booking system, authentication, and admin features.",
@@ -240,7 +268,7 @@ export const PROJECTS = [
     category: "Full Stack",
   },
   {
-    id: 5,
+    id: 6,
     title: "AN Blog",
     description:
       "A full-stack blogging platform with authentication, post management, and responsive UI.",
@@ -252,7 +280,7 @@ export const PROJECTS = [
     category: "Full Stack",
   },
   {
-    id: 6,
+    id: 7,
     title: "Chat Application",
     description:
       "Real-time chat application using WebSockets with authentication and messaging features.",
@@ -264,7 +292,7 @@ export const PROJECTS = [
     category: "Full Stack",
   },
   {
-    id: 7,
+    id: 8,
     title: "VibeTube Backend",
     description:
       "Backend system for a video platform with authentication, uploads, and API handling.",
@@ -276,7 +304,7 @@ export const PROJECTS = [
     category: "Backend",
   },
   {
-    id: 8,
+    id: 9,
     title: "Doctor Appointment (n8n)",
     description:
       "Automation-based doctor appointment system using n8n workflows and integrations.",
@@ -288,7 +316,7 @@ export const PROJECTS = [
     category: "Automation",
   },
   {
-    id: 9,
+    id: 10,
     title: "Route Finder",
     description:
       "A pathfinding application implementing shortest path algorithms like Dijkstra.",
@@ -300,7 +328,7 @@ export const PROJECTS = [
     category: "Algorithm",
   },
   {
-    id: 10,
+    id: 11,
     title: "Ludo Game",
     description:
       "A fun interactive Ludo game with custom UI and gameplay logic.",
@@ -312,7 +340,7 @@ export const PROJECTS = [
     category: "Game",
   },
   {
-    id: 11,
+    id: 12,
     title: "Quran App",
     description:
       "A web app for reading Quran with clean UI and user-friendly navigation.",
@@ -324,7 +352,7 @@ export const PROJECTS = [
     category: "Mobile App",
   },
   {
-    id: 12,
+    id: 13,
     title: "DLD Project",
     description:
       "Digital Logic Design project implemented using simulation tools.",
