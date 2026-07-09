@@ -232,7 +232,7 @@ export const PROJECTS = [
   id: 4,
   title: "Mystery Message",
   description:
-    "A modern full-stack anonymous messaging platform built with Next.js where users can securely create an account, verify their email, receive anonymous messages through a unique public profile, manage messages from a personalized dashboard, control message acceptance, and generate AI-powered message suggestions using Google Gemini.",
+"A modern full-stack anonymous messaging platform built with Next.js featuring secure authentication, email verification, AI-powered message suggestions, anonymous messaging, and a personalized user dashboard.",
   image: MysteryMessageProject,
   tags: [
     "Next.js",
@@ -241,14 +241,8 @@ export const PROJECTS = [
     "Tailwind CSS",
     "Shadcn UI",
     "MongoDB",
-    "Mongoose",
     "NextAuth",
     "Zod",
-    "React Hook Form",
-    "Nodemailer",
-    "Gemini AI",
-    "AI SDK",
-    "Vercel",
   ],
   liveUrl: "https://mstry-message-roan.vercel.app",
   githubUrl: "https://github.com/Ahmadnaveedofficial/nextApp",
