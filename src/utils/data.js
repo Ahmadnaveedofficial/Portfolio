@@ -232,7 +232,7 @@ export const PROJECTS = [
   id: 4,
   title: "Mystery Message",
   description:
-"A modern full-stack anonymous messaging platform built with Next.js featuring secure authentication, email verification, AI-powered message suggestions, anonymous messaging, and a personalized user dashboard.",
+"A full-stack anonymous messaging platform built with Next.js, TypeScript, and MongoDB. Features secure authentication, AI-powered message suggestions, email verification, and a personalized user dashboard.",
   image: MysteryMessageProject,
   tags: [
     "Next.js",
