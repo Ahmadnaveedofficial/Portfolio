@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, Mail } from "lucide-react";
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 import { useTheme } from "../../context/ThemeContext.jsx";
-import Profile1 from "../../assets/Profile1.jpg";
+import profile from "../../assets/profile.jpg";
 import cvFile from "../../assets/AhmadCV.pdf";
 import { containerVariants, itemsVariants } from "../../utils/helper.js";
 
@@ -109,7 +109,7 @@ const HeroSection = () => {
                    `}
                   >
                     <img
-                      src={Profile1}
+                      src={profile}
                       alt="profile"
                       className="w-full h-full object-cover"
                     />
@@ -407,7 +407,7 @@ const HeroSection = () => {
                     }`}
                   >
                     <img
-                      src={Profile1}
+                      src={profile}
                       alt="profile"
                       className="w-full h-full object-cover"
                     />
