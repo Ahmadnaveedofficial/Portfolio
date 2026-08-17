@@ -34,76 +34,85 @@ import HireCraftProject from "../assets/HireCraftProject.png";
 import CollaborativeEditorProject from "../assets/CollaborativeEditorProject.png";
 import MysteryMessageProject from "../assets/MysteryMessageProject.png";
 
+
 export const SKILLS_CATEGORY = [
   {
     title: "Frontend Development",
     icon: Code2,
     skills: [
-      { name: "HTML", level: 100, color: "bg-orange-500" },
-      { name: "CSS", level: 88, color: "bg-blue-500" },
-      { name: "JavaScript", level: 90, color: "bg-yellow-400" },
-      { name: "TypeScript", level: 75, color: "bg-yellow-600" },
-      { name: "React", level: 95, color: "bg-blue-400" },
-      { name: "Framer Motion", level: 93, color: "bg-pink-500" },
-      { name: "Nextjs", level: 80, color: "bg-red-500" },
+      { name: "HTML", level: 95, color: "bg-[#E34F26]" },
+      { name: "CSS", level: 90, color: "bg-[#1572B6]" },
+      { name: "JavaScript", level: 90, color: "bg-[#F7DF1E]" },
+      { name: "TypeScript", level: 85, color: "bg-[#3178C6]" },
+      { name: "React", level: 92, color: "bg-[#61DAFB]" },
+      { name: "Next.js", level: 85, color: "bg-[#000000]" },
+      { name: "Tailwind CSS", level: 90, color: "bg-[#06B6D4]" },
+      { name: "Framer Motion", level: 88, color: "bg-[#0055FF]" },
     ],
   },
+
   {
     title: "Backend Development",
     icon: Server,
     skills: [
-      { name: "Node.js", level: 90, color: "bg-green-500" },
-      { name: "Express.js", level: 88, color: "bg-gray-500" },
-      { name: "REST APIs", level: 87, color: "bg-yellow-500" },
-      { name: "JWT Authentication", level: 86, color: "bg-purple-500" },
-      { name: "Session Authentication", level: 80, color: "bg-gray-300" },
-      { name: "Nextjs", level: 80, color: "bg-red-500" },
+      { name: "Node.js", level: 90, color: "bg-[#339933]" },
+      { name: "Express.js", level: 88, color: "bg-[#000000]" },
+      { name: "NestJS", level: 85, color: "bg-[#E0234E]" },
+      { name: "REST APIs", level: 92, color: "bg-[#FF6C37]" },
+      { name: "GraphQL", level: 75, color: "bg-[#E10098]" },
+      { name: "JWT Authentication", level: 88, color: "bg-[#000000]" },
+      { name: "Google OAuth", level: 82, color: "bg-[#4285F4]" },
+      { name: "Session Authentication", level: 80, color: "bg-[#6B7280]" },
     ],
   },
+
   {
-    title: "Database Management",
+    title: "Database & ORM",
     icon: Database,
     skills: [
-      { name: "MongoDB", level: 85, color: "bg-green-600" },
-      { name: "Mongoose", level: 83, color: "bg-red-500" },
-      { name: "PostgreSQL", level: 80, color: "bg-green-500" },
-      { name: "SQL", level: 80, color: "bg-blue-500" },
-      { name: "Prisma", level: 78, color: "bg-indigo-500" },
-      { name: "Firebase", level: 82, color: "bg-yellow-500" },
-      { name: "Appwrite", level: 78, color: "bg-pink-500" },
+      { name: "MongoDB", level: 88, color: "bg-[#47A248]" },
+      { name: "Mongoose", level: 85, color: "bg-[#880000]" },
+      { name: "PostgreSQL", level: 82, color: "bg-[#4169E1]" },
+      { name: "SQL", level: 85, color: "bg-[#CC2927]" },
+      { name: "SQL Server", level: 78, color: "bg-[#CC2927]" },
+      { name: "Prisma", level: 80, color: "bg-[#2D3748]" },
+      { name: "Firebase", level: 82, color: "bg-[#FFCA28]" },
+      { name: "Appwrite", level: 78, color: "bg-[#FD366E]" },
     ],
   },
+
   {
     title: "Cloud & DevOps",
     icon: Cloud,
     skills: [
-      { name: "Git", level: 90, color: "bg-orange-500" },
-      { name: "GitHub", level: 88, color: "bg-gray-700" },
-      { name: "Docker", level: 80, color: "bg-blue-500" },
-      { name: "Vercel", level: 85, color: "bg-black" },
-      { name: "Netlify", level: 83, color: "bg-teal-500" },
-      { name: "Cloudinary", level: 82, color: "bg-blue-400" },
-      { name: "Azure", level: 80, color: "bg-blue-600" },
-      { name: "AWS", level: 75, color: "bg-yellow-500" },
+      { name: "Git", level: 92, color: "bg-[#F05032]" },
+      { name: "GitHub", level: 90, color: "bg-[#181717]" },
+      { name: "Docker", level: 82, color: "bg-[#2496ED]" },
+      { name: "AWS", level: 78, color: "bg-[#FF9900]" },
+      { name: "Vercel", level: 88, color: "bg-[#000000]" },
+      { name: "Netlify", level: 82, color: "bg-[#00C7B7]" },
+      { name: "Azure", level: 75, color: "bg-[#0078D4]" },
+      { name: "Cloudinary", level: 82, color: "bg-[#3448C5]" },
     ],
   },
+
   {
     title: "AI & Automation",
     icon: Bot,
     skills: [
-      { name: "n8n", level: 82, color: "bg-orange-600" },
-      { name: "Gemini AI", level: 80, color: "bg-blue-500" },
-      { name: "OpenAI API", level: 78, color: "bg-green-500" },
-      { name: "LangChain", level: 70, color: "bg-purple-500" },
-      { name: "Prompt Engineering", level: 85, color: "bg-pink-500" },
-      { name: "AI Agents", level: 72, color: "bg-yellow-500" },
-      { name: "Workflow Automation", level: 80, color: "bg-cyan-500" },
+      { name: "Gemini AI", level: 82, color: "bg-[#4285F4]" },
+      { name: "OpenAI API", level: 80, color: "bg-[#10A37F]" },
+      { name: "LangChain", level: 72, color: "bg-[#1C3C3C]" },
+      { name: "n8n", level: 82, color: "bg-[#EA4B71]" },
+      { name: "AI Agents", level: 72, color: "bg-[#8B5CF6]" },
+      { name: "Prompt Engineering", level: 85, color: "bg-[#EC4899]" },
+      { name: "Workflow Automation", level: 82, color: "bg-[#06B6D4]" },
     ],
   },
 ];
 
 export const TECH_STACK = [
-  // Programming Languages
+  // Languages
   "C++",
   "Java",
   "Python",
@@ -115,36 +124,43 @@ export const TECH_STACK = [
   "CSS",
   "Tailwind CSS",
   "React",
+  "Next.js",
   "Framer Motion",
-  "Nextjs",
+  "Redux Toolkit",
+  "Shadcn UI",
 
   // Backend
   "Node.js",
   "Express.js",
+  "NestJS",
   "REST APIs",
   "JWT Authentication",
-  "Google Auth",
+  "Google OAuth",
+  "Socket.IO",
 
   // Database & ORM
   "MongoDB",
   "Mongoose",
+  "PostgreSQL",
   "SQL",
   "SQL Server",
   "Prisma",
 
-  // BaaS
+  // Backend Services
   "Firebase",
   "Appwrite",
+  "Cloudinary",
 
   // Cloud & DevOps
   "Git",
   "GitHub",
   "Docker",
+  "AWS",
+  "AWS ECS",
+  "AWS ECR",
   "Vercel",
   "Netlify",
-  "Cloudinary",
   "Azure",
-  "AWS",
 
   // AI & Automation
   "n8n",
@@ -154,13 +170,10 @@ export const TECH_STACK = [
   "Prompt Engineering",
   "AI Agents",
   "Workflow Automation",
-  "Make (Integromat)",
 
-  // Tools & Software
+  // Tools
   "VS Code",
   "Postman",
-  "MS Office",
-  "Multisim",
 ];
 
 export const STATS = [
@@ -461,20 +474,20 @@ export const JOURNEY_STEPS = [
   {
     id: 1,
     year: "2022",
-    title: "Started Learning Programming",
-    company: "Self-Employed",
+    title: "Started Programming",
+    company: "Self-Learning",
     description:
-      "Began my journey with programming fundamentals using C++ and explored core concepts like OOP and problem solving.",
+      "Started programming with C++, focusing on programming fundamentals, object-oriented programming, data structures, and problem-solving.",
     icon: Code2,
     color: "bg-blue-500",
   },
   {
     id: 2,
     year: "2022",
-    title: "Explored Web Development",
-    company: "Self-Employed",
+    title: "Started Web Development",
+    company: "Self-Learning",
     description:
-      "Learned HTML, CSS, and JavaScript to build responsive and interactive web interfaces.",
+      "Learned HTML, CSS, and JavaScript and started building responsive and interactive web interfaces.",
     icon: BookOpen,
     color: "bg-green-500",
   },
@@ -482,9 +495,9 @@ export const JOURNEY_STEPS = [
     id: 3,
     year: "2023",
     title: "Frontend Development",
-    company: "Self-Employed",
+    company: "Self-Learning",
     description:
-      "Worked with React and Tailwind CSS to build modern, dynamic, and user-friendly web applications.",
+      "Started working with React, Tailwind CSS, and modern frontend tools to build dynamic and user-friendly applications.",
     icon: Zap,
     color: "bg-yellow-500",
   },
@@ -492,39 +505,39 @@ export const JOURNEY_STEPS = [
     id: 4,
     year: "2023",
     title: "Backend Development",
-    company: "Self-Employed",
+    company: "Self-Learning",
     description:
-      "Built scalable backend systems using Node.js and Express, including REST APIs and authentication.",
+      "Expanded into backend development with Node.js and Express.js, building REST APIs, authentication systems, and server-side applications.",
     icon: Server,
     color: "bg-purple-500",
   },
   {
     id: 5,
     year: "2024",
-    title: "Database & Cloud Integration",
-    company: "Self-Employed",
+    title: "Full-Stack Development",
+    company: "Personal Projects",
     description:
-      "Integrated databases like MongoDB and SQL, and worked with Firebase, Appwrite, and Cloudinary.",
-    icon: Database,
-    color: "bg-pink-500",
+      "Started building complete full-stack applications by combining React, Node.js, Express.js, MongoDB, SQL, and third-party services.",
+    icon: Briefcase,
+    color: "bg-orange-500",
   },
   {
     id: 6,
     year: "2024",
-    title: "Full Stack Projects",
-    company: "Self-Employed",
+    title: "Cloud & Backend Services",
+    company: "Personal Projects",
     description:
-      "Developed full-stack applications like Car Rental System and Chat App with real-world features.",
-    icon: Briefcase,
-    color: "bg-orange-500",
+      "Worked with MongoDB, PostgreSQL, Firebase, Appwrite, Cloudinary, and other backend services to build production-oriented applications.",
+    icon: Database,
+    color: "bg-pink-500",
   },
   {
     id: 7,
     year: "2025",
     title: "DevOps & Cloud Deployment",
-    company: "Self-Employed",
+    company: "Personal Projects",
     description:
-      "Deployed applications using Vercel, Netlify, Docker, and explored cloud platforms like Azure and AWS ECS.",
+      "Started working with Docker and cloud deployment while exploring platforms and services including Vercel, Netlify, AWS, and Azure.",
     icon: Cloud,
     color: "bg-cyan-500",
   },
@@ -532,19 +545,29 @@ export const JOURNEY_STEPS = [
     id: 8,
     year: "2025",
     title: "AI & Automation",
-    company: "Self-Employed",
+    company: "Personal Projects",
     description:
-      "Dived into AI integration and workflow automation using n8n, Gemini AI, OpenAI API, and LangChain to build intelligent, automated applications.",
+      "Explored AI-powered applications and workflow automation using Gemini AI, OpenAI APIs, n8n, and LangChain.",
     icon: Bot,
     color: "bg-violet-500",
   },
   {
     id: 9,
     year: "2026",
-    title: "Continuous Learning",
-    company: "Self-Employed",
+    title: "Software Development",
+    company: "10Pearls",
     description:
-      "Continuously improving skills by exploring AI Agents, advanced prompt engineering, and cutting-edge backend and cloud-native concepts.",
+      "Joined the 10Pearls Internship Cohort 9 and worked with the MERN stack, TypeScript, Git, MongoDB, Express.js, React.js, MySQL, testing, logging, and code quality practices.",
+    icon: Briefcase,
+    color: "bg-indigo-500",
+  },
+  {
+    id: 10,
+    year: "2026",
+    title: "Advanced Full-Stack Development",
+    company: "Continuous Learning",
+    description:
+      "Continuing to strengthen full-stack engineering skills with Next.js, NestJS, TypeScript, PostgreSQL, Prisma, Docker, cloud technologies, AI agents, and scalable backend architecture.",
     icon: Rocket,
     color: "bg-red-500",
   },
@@ -573,25 +596,37 @@ export const PASSIONS = [
     icon: Code2,
     title: "Clean Code",
     description:
-      "Obsessed with writing readable, maintainable, and scalable code that stands the test of time.",
+      "Focused on writing readable, maintainable, and scalable code that is easy to understand and evolve.",
   },
   {
     icon: Globe,
     title: "Open Source",
     description:
-      "Love contributing to the developer community by sharing knowledge and collaborating on open source projects.",
+      "Interested in contributing to the developer community through knowledge sharing, collaboration, and open source projects.",
   },
   {
     icon: Zap,
     title: "Performance",
     description:
-      "Driven to build lightning-fast applications by optimizing every layer of the stack.",
+      "Driven to build fast and efficient applications by optimizing performance across the entire stack.",
   },
   {
     icon: Bot,
     title: "AI & Automation",
     description:
-      "Fascinated by the power of AI and automation to solve real-world problems, building intelligent workflows and AI-powered applications.",
+      "Fascinated by AI and automation, building intelligent workflows and AI-powered applications to solve real-world problems.",
+  },
+  {
+    icon: Server,
+    title: "Backend Architecture",
+    description:
+      "Passionate about designing robust APIs, scalable backend systems, authentication flows, and maintainable application architectures.",
+  },
+  {
+    icon: Cloud,
+    title: "Cloud & DevOps",
+    description:
+      "Interested in containerization, cloud deployment, CI/CD, and building reliable infrastructure for modern applications.",
   },
 ];
 
