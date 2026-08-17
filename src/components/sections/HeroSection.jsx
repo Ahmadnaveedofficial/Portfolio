@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, Mail } from "lucide-react";
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 import { useTheme } from "../../context/ThemeContext.jsx";
-import profile2 from "../../assets/profile2.jpg";
+import profile2 from "../../assets/profile2.png";
 import cvFile from "../../assets/AhmadCV.pdf";
 import { containerVariants, itemsVariants } from "../../utils/helper.js";
 
