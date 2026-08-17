@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, Mail } from "lucide-react";
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 import { useTheme } from "../../context/ThemeContext.jsx";
-import profile from "../../assets/profile.jpg";
+import profile2 from "../../assets/profile2.jpg";
 import cvFile from "../../assets/AhmadCV.pdf";
 import { containerVariants, itemsVariants } from "../../utils/helper.js";
 
@@ -109,8 +109,8 @@ const HeroSection = () => {
                    `}
                   >
                     <img
-                      src={profile}
-                      alt="profile"
+                      src={profile2}
+                      alt="profile2"
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
@@ -363,7 +363,7 @@ const HeroSection = () => {
               </motion.div>
             </motion.div>
 
-            {/* Right column profile image */}
+            {/* Right column profile2 image */}
             <motion.div
               initial="hidden"
               animate="visible"
@@ -407,8 +407,8 @@ const HeroSection = () => {
                     }`}
                   >
                     <img
-                      src={profile}
-                      alt="profile"
+                      src={profile2}
+                      alt="profile2"
                       className="w-full h-full object-cover"
                     />
                   </motion.div>
