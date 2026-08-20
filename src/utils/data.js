@@ -16,6 +16,7 @@ import {
   Phone,
   Globe,
   Bot,
+  CheckCircle2,
 } from "lucide-react";
 
 import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
@@ -33,7 +34,7 @@ import HarmonyMusicAcademyProject from "../assets/HarmonyMusicAcademyProject.png
 import HireCraftProject from "../assets/HireCraftProject.png";
 import CollaborativeEditorProject from "../assets/CollaborativeEditorProject.png";
 import MysteryMessageProject from "../assets/MysteryMessageProject.png";
-
+import SignalistProject from "../assets/SignalistProject.png";
 
 export const SKILLS_CATEGORY = [
   {
@@ -48,6 +49,7 @@ export const SKILLS_CATEGORY = [
       { name: "Next.js", level: 85, color: "bg-[#000000]" },
       { name: "Tailwind CSS", level: 90, color: "bg-[#06B6D4]" },
       { name: "Framer Motion", level: 88, color: "bg-[#0055FF]" },
+      { name: "Redux Toolkit", level: 82, color: "bg-[#764ABC]" },
     ],
   },
 
@@ -63,6 +65,7 @@ export const SKILLS_CATEGORY = [
       { name: "JWT Authentication", level: 88, color: "bg-[#000000]" },
       { name: "Google OAuth", level: 82, color: "bg-[#4285F4]" },
       { name: "Session Authentication", level: 80, color: "bg-[#6B7280]" },
+      { name: "Better Auth", level: 78, color: "bg-[#111827]" },
     ],
   },
 
@@ -73,6 +76,7 @@ export const SKILLS_CATEGORY = [
       { name: "MongoDB", level: 88, color: "bg-[#47A248]" },
       { name: "Mongoose", level: 85, color: "bg-[#880000]" },
       { name: "PostgreSQL", level: 82, color: "bg-[#4169E1]" },
+      { name: "MySQL", level: 82, color: "bg-[#4479A1]" },
       { name: "SQL", level: 85, color: "bg-[#CC2927]" },
       { name: "SQL Server", level: 78, color: "bg-[#CC2927]" },
       { name: "Prisma", level: 80, color: "bg-[#2D3748]" },
@@ -91,6 +95,7 @@ export const SKILLS_CATEGORY = [
       { name: "AWS", level: 78, color: "bg-[#FF9900]" },
       { name: "Vercel", level: 88, color: "bg-[#000000]" },
       { name: "Netlify", level: 82, color: "bg-[#00C7B7]" },
+      { name: "Render", level: 78, color: "bg-[#46E3B7]" },
       { name: "Azure", level: 75, color: "bg-[#0078D4]" },
       { name: "Cloudinary", level: 82, color: "bg-[#3448C5]" },
     ],
@@ -104,9 +109,21 @@ export const SKILLS_CATEGORY = [
       { name: "OpenAI API", level: 80, color: "bg-[#10A37F]" },
       { name: "LangChain", level: 72, color: "bg-[#1C3C3C]" },
       { name: "n8n", level: 82, color: "bg-[#EA4B71]" },
+      { name: "Inngest", level: 78, color: "bg-[#1E1E2E]" },
       { name: "AI Agents", level: 72, color: "bg-[#8B5CF6]" },
       { name: "Prompt Engineering", level: 85, color: "bg-[#EC4899]" },
       { name: "Workflow Automation", level: 82, color: "bg-[#06B6D4]" },
+    ],
+  },
+
+  {
+    title: "Testing & Quality Assurance",
+    icon: CheckCircle2,
+    skills: [
+      { name: "Jest", level: 80, color: "bg-[#C21325]" },
+      { name: "Mocha", level: 75, color: "bg-[#8D6748]" },
+      { name: "SonarQube", level: 72, color: "bg-[#4E9BCD]" },
+      { name: "Pino Logger", level: 70, color: "bg-[#22C55E]" },
     ],
   },
 ];
@@ -127,7 +144,10 @@ export const TECH_STACK = [
   "Next.js",
   "Framer Motion",
   "Redux Toolkit",
+  "React Router",
   "Shadcn UI",
+  "Zod",
+  "TinyMCE",
 
   // Backend
   "Node.js",
@@ -136,12 +156,20 @@ export const TECH_STACK = [
   "REST APIs",
   "JWT Authentication",
   "Google OAuth",
+  "Better Auth",
+  "NextAuth",
   "Socket.IO",
+
+  // Real-Time & Collaboration
+  "Yjs",
+  "CRDT",
+  "Monaco Editor",
 
   // Database & ORM
   "MongoDB",
   "Mongoose",
   "PostgreSQL",
+  "MySQL",
   "SQL",
   "SQL Server",
   "Prisma",
@@ -150,6 +178,8 @@ export const TECH_STACK = [
   "Firebase",
   "Appwrite",
   "Cloudinary",
+  "Nodemailer",
+  "TradingView",
 
   // Cloud & DevOps
   "Git",
@@ -161,9 +191,11 @@ export const TECH_STACK = [
   "Vercel",
   "Netlify",
   "Azure",
+  "Render",
 
   // AI & Automation
   "n8n",
+  "Inngest",
   "Gemini AI",
   "OpenAI API",
   "LangChain",
@@ -171,48 +203,58 @@ export const TECH_STACK = [
   "AI Agents",
   "Workflow Automation",
 
+  // Testing & Quality Assurance
+  "Jest",
+  "Mocha",
+  "SonarQube",
+  "Pino Logger",
+
+  // Desktop & Mobile
+  "Java Swing",
+  "Java AWT",
+  "MIT App Inventor",
+
+  // Concepts
+  "Data Structures & Algorithms",
+  "OOP",
+
   // Tools
   "VS Code",
   "Postman",
 ];
 
 export const STATS = [
-  { number: "10+", label: "Projects Completed" },
+  { number: "14+", label: "Projects Completed" },
   { number: "1.5+", label: "Years of Experience" },
-  { number: "20+", label: "Technologies" },
-  { number: "3+", label: "Certifications" },
+  { number: "50+", label: "Technologies" },
+  { number: "7+", label: "Certifications" },
   { number: "100%", label: "Client Satisfaction" },
 ];
-
-
 
 export const PROJECTS = [
   {
     id: 1,
-    title: "Real-Time Collaborative Code Editor",
+    title: "Signalist",
     description:
-      "Built a real-time collaborative code editor where multiple users can write and edit code together without conflicts. It uses Yjs CRDTs and Socket.IO for instant synchronization, Monaco Editor for a VS Code-like coding experience, and Docker for containerization. The application is deployed on AWS ECS with ECR and an Application Load Balancer, making it scalable and production-ready.",
-    image: CollaborativeEditorProject,
+      "Built a full-stack AI-powered stock market intelligence platform for tracking market data, stock performance, and company insights. Integrated Google Gemini to generate personalized market insights and summaries, and used TradingView for custom stock charts and visualizations. Includes secure authentication with Better Auth and automated email workflows powered by Inngest and Nodemailer.",
+    image: SignalistProject,
     tags: [
-      "React",
-      "Node.js",
-      "Express",
-      "Socket.IO",
-      "Yjs",
-      "CRDT",
-      "Monaco Editor",
-      "Docker",
-      "AWS ECS",
-      "AWS ECR",
-      "Application Load Balancer",
-      "Real-Time Collaboration",
+      "Next.js",
+      "TypeScript",
+      "MongoDB",
+      "Mongoose",
+      "Better Auth",
+      "Gemini AI",
+      "Inngest",
+      "TradingView",
+      "Nodemailer",
+      "REST API",
     ],
-    liveUrl:
-      "http://editor-ecs-abl-886231062.ap-northeast-1.elb.amazonaws.com",
+    liveUrl: "https://stock-market-dev.vercel.app/sign-in",
     githubUrl:
-      "https://github.com/Ahmadnaveedofficial/Real-Time-Collaborative-Editor",
+      "https://github.com/Ahmadnaveedofficial/signalist_stock-tracker-app",
     featured: true,
-    category: "Cloud Full Stack",
+    category: "AI Full Stack",
   },
 
   {
@@ -242,6 +284,55 @@ export const PROJECTS = [
 
   {
     id: 3,
+    title: "Car Rental System",
+    description:
+      "Built a full-stack car rental application where users can browse available cars, make bookings, and manage their reservations. It also includes secure authentication and an admin dashboard for managing vehicles, bookings, and customer information.",
+    image: CarProject,
+    tags: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "REST API",
+      "Tailwind CSS",
+      "Authentication",
+    ],
+    liveUrl: "https://car-rental-roan-nu.vercel.app/",
+    githubUrl: "https://github.com/Ahmadnaveedofficial/CarRental",
+    featured: true,
+    category: "Full Stack",
+  },
+
+  {
+    id: 4,
+    title: "Real-Time Collaborative Code Editor",
+    description:
+      "Built a real-time collaborative code editor where multiple users can write and edit code together without conflicts. It uses Yjs CRDTs and Socket.IO for instant synchronization, Monaco Editor for a VS Code-like coding experience, and Docker for containerization. The application is deployed on AWS ECS with ECR and an Application Load Balancer, making it scalable and production-ready.",
+    image: CollaborativeEditorProject,
+    tags: [
+      "React",
+      "Node.js",
+      "Express",
+      "Socket.IO",
+      "Yjs",
+      "CRDT",
+      "Monaco Editor",
+      "Docker",
+      "AWS ECS",
+      "AWS ECR",
+      "Application Load Balancer",
+      "Real-Time Collaboration",
+    ],
+    liveUrl: "http://editor-ecs-abl-886231062.ap-northeast-1.elb.amazonaws.com",
+    githubUrl:
+      "https://github.com/Ahmadnaveedofficial/Real-Time-Collaborative-Editor",
+    featured: true,
+    category: "Cloud Full Stack",
+  },
+
+  {
+    id: 5,
     title: "Mystery Message",
     description:
       "A full-stack anonymous messaging platform where users can receive honest feedback without revealing the sender's identity. It includes secure authentication, email verification, AI-powered message suggestions, and a personal dashboard to manage incoming messages through a clean and responsive interface.",
@@ -265,7 +356,7 @@ export const PROJECTS = [
   },
 
   {
-    id: 4,
+    id: 6,
     title: "Harmony Music Academy",
     description:
       "Developed a modern music academy website using Next.js and TypeScript. The platform showcases music courses, instructor profiles, and upcoming webinars with a responsive design, smooth user experience, and fast performance optimized for both desktop and mobile devices.",
@@ -286,29 +377,7 @@ export const PROJECTS = [
   },
 
   {
-    id: 5,
-    title: "Car Rental System",
-    description:
-      "Built a full-stack car rental application where users can browse available cars, make bookings, and manage their reservations. It also includes secure authentication and an admin dashboard for managing vehicles, bookings, and customer information.",
-    image: CarProject,
-    tags: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "JWT",
-      "REST API",
-      "Tailwind CSS",
-      "Authentication",
-    ],
-    liveUrl: "https://car-rental-roan-nu.vercel.app/",
-    githubUrl: "https://github.com/Ahmadnaveedofficial/CarRental",
-    featured: true,
-    category: "Full Stack",
-  },
-
-  {
-    id: 6,
+    id: 7,
     title: "AN Blog",
     description:
       "A full-stack blogging platform that allows users to create, edit, publish, and manage blog posts with ease. Built using React and Appwrite, it features secure authentication, image uploads, a rich text editor, and a responsive interface for a smooth writing experience.",
@@ -329,7 +398,7 @@ export const PROJECTS = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "Chat Application",
     description:
       "A real-time chat application built with Socket.IO that enables users to exchange messages instantly. It supports secure authentication, private conversations, online user status, and a responsive interface designed for smooth and reliable communication.",
@@ -349,8 +418,9 @@ export const PROJECTS = [
     featured: true,
     category: "Full Stack",
   },
-    {
-    id: 8,
+
+  {
+    id: 9,
     title: "VibeTube Backend",
     description:
       "Developed the backend for a video-sharing platform using Node.js, Express, and MongoDB. It provides secure authentication, video uploads, playlist management, likes, comments, subscriptions, and RESTful APIs designed to support a scalable frontend application.",
@@ -368,11 +438,11 @@ export const PROJECTS = [
     liveUrl: "https://github.com/Ahmadnaveedofficial/VibeTube-Backend",
     githubUrl: "https://github.com/Ahmadnaveedofficial/VibeTube-Backend",
     featured: false,
-   category: "Backend API"
+    category: "Backend API",
   },
 
   {
-    id: 9,
+    id: 10,
     title: "Doctor Appointment (n8n)",
     description:
       "Built an automated doctor appointment workflow using n8n to simplify the booking process. The workflow connects multiple APIs and services to handle appointment requests, confirmations, reminders, and notifications without requiring manual intervention.",
@@ -388,23 +458,16 @@ export const PROJECTS = [
     liveUrl: "",
     githubUrl: "",
     featured: false,
-    category: "Automation & AI"
+    category: "Automation & AI",
   },
 
   {
-    id: 10,
+    id: 11,
     title: "Route Finder",
     description:
       "Developed a C++ route-finding application that uses Dijkstra's algorithm to calculate the shortest path between cities. The project demonstrates graph data structures, pathfinding algorithms, and problem-solving techniques commonly used in navigation systems.",
     image: RouteFinderProject,
-    tags: [
-      "C++",
-      "Data Structures",
-      "Algorithms",
-      "Dijkstra",
-      "Graphs",
-      "DSA",
-    ],
+    tags: ["C++", "Data Structures", "Algorithms", "Dijkstra", "Graphs", "DSA"],
     liveUrl: "https://github.com/Ahmadnaveedofficial/Route-Finder",
     githubUrl: "https://github.com/Ahmadnaveedofficial/Route-Finder",
     featured: false,
@@ -412,7 +475,7 @@ export const PROJECTS = [
   },
 
   {
-    id: 11,
+    id: 12,
     title: "Ludo Game",
     description:
       "Created a desktop-based Ludo game using Java Swing and AWT. It includes dice rolling, player movement, turn-based gameplay, and a custom graphical interface, demonstrating object-oriented programming concepts and event-driven application development.",
@@ -432,7 +495,7 @@ export const PROJECTS = [
   },
 
   {
-    id: 12,
+    id: 13,
     title: "Quran App",
     description:
       "Built a mobile Quran application using MIT App Inventor that provides offline Quran reading with simple navigation and an easy-to-use interface. The app was designed to make Quran reading accessible for users of all ages with a clean and lightweight experience.",
@@ -451,7 +514,7 @@ export const PROJECTS = [
   },
 
   {
-    id: 13,
+    id: 14,
     title: "DLD Project",
     description:
       "Designed and simulated digital circuits using Multisim as part of a Digital Logic Design project. The project demonstrates logic gates, combinational and sequential circuits, and practical circuit analysis to strengthen core electronics and computer engineering concepts.",
@@ -547,7 +610,7 @@ export const JOURNEY_STEPS = [
     title: "AI & Automation",
     company: "Personal Projects",
     description:
-      "Explored AI-powered applications and workflow automation using Gemini AI, OpenAI APIs, n8n, and LangChain.",
+      "Explored AI-powered applications and workflow automation using Gemini AI, OpenAI APIs, n8n, Inngest, and LangChain.",
     icon: Bot,
     color: "bg-violet-500",
   },
@@ -557,7 +620,7 @@ export const JOURNEY_STEPS = [
     title: "Software Development",
     company: "10Pearls",
     description:
-      "Joined the 10Pearls Internship Cohort 9 and worked with the MERN stack, TypeScript, Git, MongoDB, Express.js, React.js, MySQL, testing, logging, and code quality practices.",
+      "Joined the 10Pearls Internship Cohort 9 and worked with the MERN stack, TypeScript, Git, MongoDB, Express.js, React.js, MySQL, Pino Logger, Mocha, Jest, and SonarQube for testing and code quality.",
     icon: Briefcase,
     color: "bg-indigo-500",
   },
